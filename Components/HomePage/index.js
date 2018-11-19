@@ -17,6 +17,8 @@ import CoffeeCart from "../CoffeeCart";
 import CoffeeDetail from "../CoffeeDetail";
 import Login from "../Login";
 
+import OurStack from "../../navigation";
+
 class HomePage extends Component {
   componentDidMount() {
     const { coffeeshops } = this.props.coffee;
@@ -26,9 +28,7 @@ class HomePage extends Component {
   render() {
     return (
       <Container style={styles.transparent}>
-        <View style={styles.overlay} />
-        <Header style={styles.transparent} />
-        <CoffeeList />
+        <OurStack />
       </Container>
     );
   }
